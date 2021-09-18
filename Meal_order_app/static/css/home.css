@@ -1,0 +1,288 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    width : 100%;
+    height: 470%;
+}
+.navbar {
+    position: sticky;
+    z-index: 1;
+    top : 0;
+    width: 100%;
+    background-color: black;
+    height : 10vh;
+}
+.basket {
+    position: absolute;
+    left: 3%;
+    color: white;
+    top : 50%;
+    transform: translateY(-50%);
+}
+.app-name {
+    position: absolute;
+    top : 50%;
+    color : white;
+    left : 50%;
+    transform: translate(-50%,-50%);
+}
+.app-name:hover {
+    cursor: pointer;
+}
+.exit {
+    position: absolute;
+    right : 3%;
+    top : 50%;
+    color: white;
+    transform: translate(0,-50%);
+}
+.exit:hover {
+    cursor: pointer;
+}
+.center {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    height: 80%;
+}
+.bakery, .desserts, .drinks {
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 3%;
+    margin-bottom: 25vh;
+}
+.drinks {
+    margin-bottom: 0vh;
+}
+.bottom {
+    position: absolute;
+    bottom : 0;
+    width : 100%;
+    height : 15vh;
+    color: white;
+    background-color: black;
+}
+.clear, .add {
+    position: absolute;
+    top : 50%;
+    right : 0;
+    transform: translateY(-50%);
+    padding: 15px 20px;
+    color: white;
+    border-radius: 10px;
+}
+.clear:hover, .add:hover {
+    cursor: pointer;
+}
+.clear {
+    background-color: blue;
+    right : 12%;
+}
+.add {
+    background-color: green;
+    right:  2%;
+}
+.bak-product, .dessert, .drink {
+    height: 40vh;
+    border-radius: 10px;
+    border : 2px solid black;
+    position: relative;
+    margin-top: 10vh;
+}
+.header {
+    position: absolute;
+    top : 0;
+    width : 100%;
+    height : 10%;
+    font-size: 110%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+.amount {
+    position: absolute;
+    bottom : 0;
+    left : 0;
+    right: 0;
+    text-align: center;
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+.amount label {
+    position: absolute;
+    top : 50%;
+    left : 25%;
+    transform: translateY(-50%);
+    
+}
+.amount input {
+    position: absolute;
+    width : 120%;
+    height: 100%;
+    padding: 5px;
+    margin-left: 5px;    
+}
+.title1, .title2, .title3 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 15px 0px;
+    margin-top: 0;
+}
+.simit {
+    background-image: url('../images/simit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kete {
+    background-image: url('../images/kete.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.açma {
+    background-image: url('../images/açma.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poğaça {
+    background-image: url('../images/poğaca.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kaşarlı-börek {
+    background-image: url('../images/kaşarlı_börek.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kıymalı-börek {
+    background-image: url('../images/kıymalı-börek.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.su-böreği {
+    background-image: url('../images/suböreği.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.midye-baklava {
+    background-image: url('../images/midye_baklava.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.soğuk-baklava {
+    background-image: url('../images/soğuk_baklava.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.havuç-baklava {
+    background-image: url('../images/havuç_dilimi_baklava.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mini-ekler {
+    background-image: url('../images/mini_ekler.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.şöbiyet {
+    background-image: url('../images/şöbiyet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trileçe {
+    background-image: url('../images/trileçe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sütlaç {
+    background-image: url('../images/sütlaç.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.limonlu-pasta {
+    background-image: url('../images/limonlu_pasta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.frambuazlı-pasta {
+    background-image: url('../images/frambuazlı_pasta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.çikolatalı-meyveli-pasta {
+    background-image: url('../images/çikolatalı_meyveli_pasta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.çikolatalı-fıstıklı-pasta {
+    background-image: url('../images/çikolatalı_fıstıklı_pasta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cappy {
+    background-image: url('../images/cappy33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coca-cola {
+    background-image: url('../images/cocacola33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fanta {
+    background-image: url('../images/fanta33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fanta {
+    background-image: url('../images/fanta33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fusetea {
+    background-image: url('../images/fusetea33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fusetea {
+    background-image: url('../images/fusetea33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sprite {
+    background-image: url('../images/sprite33cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.su {
+    background-image: url('../images/su50cl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.warning {
+    display: none;
+    color: white;
+    position: absolute;
+    top : 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 24px;
+}
+.price {
+    position: absolute;
+    right: 5%;
+    top:  50%;
+    transform: translateY(-50%);
+}
+
+
+

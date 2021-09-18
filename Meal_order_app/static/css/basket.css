@@ -1,0 +1,91 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center {
+    position: absolute;
+    top : 10%;
+    left : 10%;
+    right : 10%;
+    bottom : 10%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.header {
+    position: absolute;
+    top : 0;
+    width : 100%;
+    height : 10vh;
+    background-color: black;
+    color: white;
+}
+.title {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+}
+.products {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top : 12vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 3%;
+    row-gap: 4%;
+}
+
+[id^="id_"] {
+    width: 30%;
+    pointer-events: none;
+    text-align: center;
+}
+
+label {
+    pointer-events: none;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+}   
+.quit{
+    position: absolute;
+    right : 19%;
+    top : 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    border-radius: 10px;
+    padding: 1% 1.5%;
+    color: white;
+}
+.confirm {
+    position: absolute;
+    right : 2%;
+    top : 50%;
+    transform: translateY(-50%);
+    background-color: green;
+    border-radius: 10px;
+    padding: 1% 1.5%;
+    color: white;
+
+}
+.update {
+    position: absolute;
+    right : 10%;
+    top : 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+    border-radius: 10px;
+    padding: 1% 1.5%;
+    color: white;
+}
+.quit:hover, .confirm:hover, .update:hover {
+    cursor: pointer;
+}

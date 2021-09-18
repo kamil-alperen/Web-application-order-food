@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block additions %}
+    <link rel="stylesheet" href="../static/css/orders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+    <div class="center">
+        <div class="header">
+            <div class="title">Siparişlerim</div>
+        </div>
+        <div class="products">{% csrf_token %}
+            <div class="row-title">
+                <div class="order-no">Sipariş No</div>
+                <div class="price">Toplam Fiyatı</div>
+                <div class="status">Durumu</div>
+                <div class="show">Detaylar</div>
+                <div class="delete">İptal Et</div>
+            </div>
+            <div class="rows">
+                <div class="row1 row">
+                    <div class="order-no"></div>
+                    <div class="price"></div>
+                    <div class="status"></div>
+                    <div class="show">Detaylar</div>
+                    <div class="delete">İptal Et</div>
+                </div>
+                <div class="row2 row">
+                    <div class="order-no"></div>
+                    <div class="price"></div>
+                    <div class="status"></div>
+                    <div class="show">Detaylar</div>
+                    <div class="delete">İptal Et</div>
+                </div>
+                <div class="row3 row">
+                    <div class="order-no"></div>
+                    <div class="price"></div>
+                    <div class="status"></div>
+                    <div class="show">Detaylar</div>
+                    <div class="delete">İptal Et</div>
+                </div>
+                <div class="row4 row">
+                    <div class="order-no"></div>
+                    <div class="price"></div>
+                    <div class="status"></div>
+                    <div class="show">Detaylar</div>
+                    <div class="delete">İptal Et</div>
+                </div>
+                <div class="row5 row">
+                    <div class="order-no"></div>
+                    <div class="price"></div>
+                    <div class="status"></div>
+                    <div class="show">Detaylar</div>
+                    <div class="delete">İptal Et</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="../"><input type="submit" class="home" value="Anasayfa"></a>
+            <i class="fa fa-angle-double-left" style="font-size:24px"></i>
+            <i class="fa fa-angle-double-right" style="font-size:24px"></i>
+        </div>
+    </div>
+    <div class="pop-up">
+        <div class="pop-header">
+            <div class="pop-title">Sipariş Detayları</div>
+        </div>
+        <div class="pop-center">
+            <div class="row">
+                <div class="col1"></div>
+                <div class="col2"></div>
+            </div>
+        </div>
+    </div>
+<script src="../static/js/orders.js"></script>
+{% endblock %}

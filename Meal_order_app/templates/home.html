@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+{% block additions %}
+    <link rel="stylesheet" href="../static/css/home.css">
+{% endblock %}
+
+{% block content %}
+    <div id="start"></div>
+    <div class="navbar"> 
+        <a href="orders/"><div class="basket">Siparişlerim</div></a>
+        <a href="#start"><div class="app-name">Ankara Fırın</div></a>
+        <div class="exit">Çıkış</div>
+    </div>
+    <form action="{{ BASE_URL }}api/quantityInfos/" method = 'POST'> {% csrf_token %}
+        <div class="center">
+            <div class="title1">Unlu Mamüller</div>
+            <div class="bakery">
+                <div class="bak-product simit">
+                    <div class="header">Simit</div>
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="simit" id="simit"></label>
+                        <div class="price">2 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product kete">
+                    <div class="header">Kete</div>
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="kete" id="kete"></label>
+                        <div class="price">4 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product açma">
+                    <div class="header">Açma</div>
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="açma" id="açma"></label>
+                        <div class="price">3 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product poğaça">
+                    <div class="header">Poğaça</div>                  
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="poğaça" id="poğaça"></label>
+                        <div class="price">3 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product kaşarlı-börek">
+                    <div class="header">Kaşarlı Börek</div>               
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="kaşarlı_börek" id="kaşarlı_börek"></label>
+                        <div class="price">12 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product kıymalı-börek">
+                    <div class="header">Kıymalı Börek</div>               
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="kıymalı_börek" id="kıymalı_börek"></label>
+                        <div class="price">14 TL</div>
+                    </div>
+                </div>
+                <div class="bak-product su-böreği">
+                    <div class="header">Su Böreği</div>                    
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="su_böreği" id="su_böreği"></label>
+                        <div class="price">8 TL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="title2">Tatlılar</div>
+            <div class="desserts">
+                <div class="dessert midye-baklava">
+                    <div class="header">Midye Baklava</div>                  
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="midye_baklava" id="midye_baklava"></label>
+                        <div class="price">20 TL</div>
+                    </div>
+                </div>
+                <div class="dessert soğuk-baklava">
+                    <div class="header">Soğuk Baklava</div>                   
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="soğuk_baklava" id="soğuk_baklava"></label>
+                        <div class="price">24 TL</div>
+                    </div>
+                </div>
+                <div class="dessert havuç-baklava">
+                    <div class="header">Havuç Baklava</div>                
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="havuç_baklava" id="havuç_baklava"></label>
+                        <div class="price">28 TL</div>
+                    </div>
+                </div>
+                <div class="dessert mini-ekler">
+                    <div class="header">Mini Ekler</div>                
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="mini_ekler" id="mini_ekler"></label>
+                        <div class="price">32 TL</div>
+                    </div>
+                </div>
+                <div class="dessert şöbiyet"> 
+                    <div class="header">Şöbiyet</div>              
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="şöbiyet" id="şöbiyet"></label>
+                        <div class="price">16 TL</div>
+                    </div>
+                </div>
+                <div class="dessert trileçe"> 
+                    <div class="header">Trileçe</div>                  
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="trileçe" id="trileçe"></label>
+                        <div class="price">12 TL</div>
+                    </div>
+                </div>
+                <div class="dessert sütlaç">  
+                    <div class="header">Sütlaç</div>            
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="sütlaç" id="sütlaç"></label>
+                        <div class="price">14 TL</div>
+                    </div>
+                </div>
+                <div class="dessert limonlu-pasta">
+                    <div class="header">Limonlu Pasta</div>             
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="limonlu_pasta" id="limonlu_pasta"></label>
+                        <div class="price">70 TL</div>
+                    </div>
+                </div>
+                <div class="dessert frambuazlı-pasta">
+                    <div class="header">Frambuazlı Pasta</div>                  
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="frambuazlı_pasta" id="frambuazlı_pasta"></label>
+                        <div class="price">80 TL</div>
+                    </div>
+                </div>
+                <div class="dessert çikolatalı-meyveli-pasta">
+                    <div class="header">Çikolatalı Meyveli Pasta</div>         
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="çikolatalı_meyveli_pasta" id="çikolatalı_meyveli_pasta"></label>
+                        <div class="price">90 TL</div>
+                    </div>
+                </div>
+                <div class="dessert çikolatalı-fıstıklı-pasta">
+                    <div class="header">Çikolatalı Fıstıklı Pasta</div>    
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="çikolatalı_fıstıklı_pasta" id="çikolatalı_fıstıklı_pasta"></label>
+                        <div class="price">80 TL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="title3">İçecekler</div>
+            <div class="drinks">
+                <div class="drink cappy">     
+                    <div class="header">Meyvesuyu</div>             
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="cappy" id="cappy"></label>
+                        <div class="price">4 TL</div>
+                    </div>
+                </div>
+                <div class="drink coca-cola"> 
+                    <div class="header">Kola</div>                
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="cocacola" id="cocacola"></label>
+                        <div class="price">6 TL</div>
+                    </div>
+                </div>
+                <div class="drink fanta">     
+                    <div class="header">Fanta</div>              
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="fanta" id="fanta"></label>
+                        <div class="price">5 TL</div>
+                    </div>
+                </div>
+                <div class="drink fusetea">   
+                    <div class="header">Soğuk çay</div>              
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="fusetea" id="fusetea"></label>
+                        <div class="price">4 TL</div>
+                    </div>
+                </div>
+                <div class="drink sprite">    
+                    <div class="header">Gazoz</div>              
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="sprite" id="sprite"></label>
+                        <div class="price">5 TL</div>
+                    </div>
+                </div>
+                <div class="drink su">        
+                    <div class="header">Su</div>        
+                    <div class="amount">
+                        <label>Miktar : <input type="text" name="su" id="su"></label>
+                        <div class="price">2 TL</div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="bottom">
+            <div class="buttons">
+                <div class="warning">Sepete eklenecek en az bir ürün giriniz</div>
+                <input type="button" class="clear" name="clear" value="Temizle">
+                <input type="submit" class="add" name="add" value="Sepete Ekle">
+            </div>
+        </div>
+    </form>
+    <input type="hidden" id="baseUrl" name="variable" value="{{ BASE_URL }}">
+    <script src="../static/js/home.js"></script>
+{% endblock %}

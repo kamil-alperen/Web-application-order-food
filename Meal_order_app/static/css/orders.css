@@ -1,0 +1,181 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center {
+    position: absolute;
+    top : 10%;
+    left : 10%;
+    right : 10%;
+    bottom : 10%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.header {
+    position: absolute;
+    top : 0;
+    width : 100%;
+    height : 10%;
+    background-color: black;
+    color: white;
+}
+.products {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top : 10%;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+}   
+.title {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+}
+.home {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    position: absolute;
+    top:  50%;
+    transform: translateY(-50%);
+    left : 2%;
+    border-radius: 10px;
+}
+.home:hover {
+    cursor: pointer;
+}
+.row-title {
+    position: absolute;
+    top : 0;
+    width: 100%;
+    height : 10vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+}
+.rows {
+    display: grid;
+    margin-top: 12vh;
+    height : 90%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    row-gap: 10%;
+}
+.row1, .row2, .row3, .row4, .row5 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+}
+.order-no, .price, .status, .show, .delete {
+    display: flex;
+    align-items:center; /* vertically */
+    justify-content:center; /* horizontally */
+    text-align: center;
+}
+.rows .show, .rows .delete {
+    width: 40%;
+    margin: auto;
+    border: 2px solid black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 0px;
+    font-size: 16px;
+}
+.rows .show {
+    background-color: green;
+}
+.rows .delete {
+    background-color: red;
+}
+.rows .show:hover, .rows .delete:hover {
+    cursor: pointer;
+}
+.row-title .order-no, .row-title .price, .row-title .status, .row-title .show, .row-title .delete{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    
+}
+.fa {
+    background-color: white;
+}
+.fa-angle-double-right {
+    position: absolute;
+    right : 3%;
+    top:  50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.fa-angle-double-left {
+    position: absolute;
+    right: 8%;
+    top:  50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    border : 2px solid black;
+    border-radius: 5px;
+}
+.fa:hover {
+    cursor: pointer;
+}
+
+.pop-up {
+    position: absolute;
+    display: none;
+    top : 25%;
+    bottom: 22%;
+    left: 35%;
+    right: 35%;
+    border : 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black, -5px -5px 5px black;
+}
+.pop-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pop-title {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pop-center {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    overflow: auto;
+}
+.pop-center .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}

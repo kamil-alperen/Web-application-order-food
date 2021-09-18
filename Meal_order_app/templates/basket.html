@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block additions %}
+    <link rel="stylesheet" href="../static/css/basket.css">
+{% endblock %}
+{% block content %}
+    <div class="center">
+        <div class="header">
+            <div class="title">Sepetim</div>
+        </div>
+        <div class="products">
+            {{form | safe}}
+        </div>
+        <div class="bottom">
+            <a href="../"><input type="button" class="quit" value="Vazgeç"></a>
+            <input type="button" class="update" value="Güncelle"> 
+            <form action="../api/marketProducts/0" method="POST">{% csrf_token %}
+                <input type="submit" value="Onayla" class="confirm">
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/basket.js"></script>
+{% endblock %}
