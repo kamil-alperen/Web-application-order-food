@@ -5,3 +5,4 @@ Siparişlerim ekranında verdiğiniz siparişlerin fiyatını ve detaylarını g
 istediğiniz siparişi iptal edebilirsiniz.<br />
 Framework : Django <br />
 Database : SQLite <br />
+https://web-app-order-food.herokuapp.com/
