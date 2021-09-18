@@ -1,0 +1,1 @@
+web: gunicorn Meal_order_project.wsgi
