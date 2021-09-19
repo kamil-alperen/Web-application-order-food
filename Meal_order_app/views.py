@@ -82,7 +82,7 @@ class QuantityInfos(View):
 
     def put(self, request):
         request.session['update'] = True
-        url = str(self.BASE_URL) + 'update'
+        url = str(QuantityInfos.BASE_URL) + 'update'
         return HttpResponse(json.dumps(url))
 
 
