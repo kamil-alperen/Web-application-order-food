@@ -74,7 +74,7 @@ class QuantityInfos(View):
             new_form.save(commit=False)
             QuantityInfos.FORM = new_form
             context = {
-            'form' : new_form
+                'form' : QuantityInfos.FORM
             }
             return render(request, 'basket.html', context)
         else:
