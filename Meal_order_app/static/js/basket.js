@@ -3,7 +3,7 @@ confirmBtn = document.querySelector('.confirm')
 const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
 
 updateBtn.addEventListener('click', (e) => {
-    fetch('../api/quantityInfos/', {
+    fetch('../../api/quantityInfos/', {
         method : 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=UTF-8',

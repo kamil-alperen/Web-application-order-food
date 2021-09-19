@@ -53,16 +53,6 @@ def home_update(request):
         'BASE_URL' : BASE_URL
     }
     return render(request, 'home.html', context)
-    
-def basket(request):
-    if QuantityInfos.FORM != None:
-        form = QuantityInfos.FORM.as_table()
-        context = {
-            'form' : form
-        }
-        return render(request, 'basket.html', context)
-    else : 
-        raise Http404
 
 def orders(request):
     return render(request, 'orders.html', {})
@@ -83,7 +73,10 @@ class QuantityInfos(View):
         if new_form.is_valid():
             new_form.save(commit=False)
             QuantityInfos.FORM = new_form
-            return redirect('basket_page')
+            context = {
+            'form' : new_form
+            }
+            return render(request, 'basket.html', context)
         else:
             raise Http404
 
