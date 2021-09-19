@@ -71,9 +71,10 @@ class QuantityInfos(View):
     def post(self, request):
         new_form = QuantityForm(request.POST)
         if new_form.is_valid():
+            new_form.save(commit=False)
             QuantityInfos.FORM = new_form
             context = {
-                'form' : QuantityInfos.FORM
+                'form' : self.FORM
             }
             return render(request, 'basket.html', context)
         else:
@@ -81,7 +82,7 @@ class QuantityInfos(View):
 
     def put(self, request):
         request.session['update'] = True
-        url = str(QuantityInfos.BASE_URL) + 'update'
+        url = self.BASE_URL + 'update'
         return HttpResponse(json.dumps(url))
 
 
