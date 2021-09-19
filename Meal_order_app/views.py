@@ -71,7 +71,6 @@ class QuantityInfos(View):
     def post(self, request):
         new_form = QuantityForm(request.POST)
         if new_form.is_valid():
-            new_form.save(commit=False)
             QuantityInfos.FORM = new_form
             context = {
                 'form' : QuantityInfos.FORM
